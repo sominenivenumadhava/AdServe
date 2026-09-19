@@ -1,0 +1,160 @@
+{
+    "metrics": {
+        "iteration_duration": {
+            "avg": 73.20500749796255,
+            "min": 21.600175,
+            "med": 43.0162935,
+            "max": 1036.351449,
+            "p(90)": 156.3330905,
+            "p(95)": 199.10786739999995
+        },
+        "http_req_waiting": {
+            "avg": 50.92171746999017,
+            "min": 0,
+            "med": 19.8696935,
+            "max": 1014.930687,
+            "p(90)": 133.75716970000002,
+            "p(95)": 176.47515389999992
+        },
+        "adserve_success_rate": {
+            "passes": 85438,
+            "fails": 0,
+            "value": 1
+        },
+        "http_req_receiving": {
+            "avg": 0.5184576020857233,
+            "min": -3.077279,
+            "med": 0.0970445,
+            "max": 85.000032,
+            "p(90)": 1.0678265000000011,
+            "p(95)": 2.125401149999998
+        },
+        "http_req_tls_handshaking": {
+            "avg": 0,
+            "min": 0,
+            "med": 0,
+            "max": 0,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "http_req_connecting": {
+            "avg": 0.014991549041410165,
+            "min": 0,
+            "med": 0,
+            "max": 33.961739,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "data_received": {
+            "count": 57675598,
+            "rate": 961307.7771167
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 85438,
+            "thresholds": {
+                "rate<0.01": false
+            },
+            "value": 0
+        },
+        "http_req_duration{expected_response:true}": {
+            "min": 0.101275,
+            "med": 20.838904,
+            "max": 1015.859803,
+            "p(90)": 134.508283,
+            "p(95)": 177.28231869999993,
+            "avg": 51.573048954481614
+        },
+        "checks": {
+            "passes": 256314,
+            "fails": 0,
+            "value": 1
+        },
+        "http_req_duration": {
+            "avg": 51.573048954481614,
+            "min": 0.101275,
+            "med": 20.838904,
+            "max": 1015.859803,
+            "p(90)": 134.508283,
+            "p(95)": 177.28231869999993,
+            "thresholds": {
+                "p(95)<500": false
+            }
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 200
+        },
+        "adserve_req_duration": {
+            "med": 21,
+            "max": 1015,
+            "p(90)": 135,
+            "p(95)": 177,
+            "avg": 51.7850605117161,
+            "min": -2
+        },
+        "http_req_sending": {
+            "p(95)": 0.1891741999999997,
+            "avg": 0.13287388240595419,
+            "min": 0.004401,
+            "med": 0.015765,
+            "max": 51.68111,
+            "p(90)": 0.06176270000000009
+        },
+        "data_sent": {
+            "rate": 234966.18599626728,
+            "count": 14097270
+        },
+        "vus_max": {
+            "max": 200,
+            "value": 200,
+            "min": 200
+        },
+        "iterations": {
+            "count": 85438,
+            "rate": 1424.0374908864683
+        },
+        "http_reqs": {
+            "count": 85438,
+            "rate": 1424.0374908864683
+        },
+        "http_req_blocked": {
+            "max": 34.65742,
+            "p(90)": 0.009225,
+            "p(95)": 0.011707,
+            "avg": 0.030689369355555732,
+            "min": 0.001517,
+            "med": 0.005631
+        }
+    },
+    "root_group": {
+        "groups": {},
+        "checks": {
+                "status is 200": {
+                    "name": "status is 200",
+                    "path": "::status is 200",
+                    "id": "6210a8cd14cd70477eba5c5e4cb3fb5f",
+                    "passes": 85438,
+                    "fails": 0
+                },
+                "response has success flag": {
+                    "id": "5681ebd0396d907279a416425b4cfa08",
+                    "passes": 85438,
+                    "fails": 0,
+                    "name": "response has success flag",
+                    "path": "::response has success flag"
+                },
+                "ad payload is valid": {
+                    "fails": 0,
+                    "name": "ad payload is valid",
+                    "path": "::ad payload is valid",
+                    "id": "13beaf574f7f14ff8efdd90f8320965b",
+                    "passes": 85438
+                }
+            },
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e"
+    }
+}

@@ -1,0 +1,11 @@
+{
+  "framework": "vite",
+  "buildCommand": "npm --prefix adserve-frontend run build",
+  "outputDirectory": "adserve-frontend/dist",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
